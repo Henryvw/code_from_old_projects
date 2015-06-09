@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+
+gem "contentful-management", "~> 0.5"
+gem "dotenv"
+gem "rake"
+gem "pry"
