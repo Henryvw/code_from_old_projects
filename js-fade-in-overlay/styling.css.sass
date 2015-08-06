@@ -1,0 +1,81 @@
+.partners
+  .survey-close
+    @extend %icon-large-close
+    +height(40px)
+    +right(15px)
+    +top(15px)
+    +width(40px)
+    background-color: transparent
+    border: 0
+    position: absolute
+
+  .register-form-wrapper
+    .container
+      @extend %icon-become-partner-bg
+
+  .container.how-it-works
+    h3
+      @extend .header-underline
+
+  .how-it-works
+    text-align: left
+    img
+      float: left
+      position: absolute
+      margin-left: 111%
+      margin-top: -40%
+      z-index: $z-index-sublevel
+
+  .split-header-partners
+    +font-weight-light
+
+    .word5,
+    .word6
+      +font-weight-regular
+
+  .header-background
+    +full-width-image("partner/become_a_partner_header.jpg")
+    +padding-top-bottom(70px)
+    background-size: cover
+    box-sizing: border-box
+    text-align: center
+
+    h2,
+    p
+      color: $inverted-text-color
+    .success
+      color: $partners-success
+    .failure
+      color: $partners-failure
+
+  #surveygizmo-overlay
+    height: 100%
+    left: 0%
+    opacity: 0
+    position: absolute
+    top: 0%
+    transition: opacity 0.5s
+    width: 100%
+
+    &.opaque-visible
+      opacity: 1
+
+    .black-overlay
+      +transparent-background($inverted-bg-color, 0.8)
+      display: block
+      height: 100%
+
+    .iframe-content
+      +margin-left(-400px)
+      +top(100px)
+      +width(800px)
+      border-color: $main-border-color
+      border-style: solid
+      border-width: 5px
+      left: 50%
+      position: absolute
+
+  .container.conclusion
+    +margin-top(130px)
+    +margin-bottom(100px)
+

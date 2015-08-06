@@ -1,0 +1,79 @@
+.header-background
+  .row.with-margin
+    %h2.split-header-partners<
+      = t(".header")
+  .row.with-margin
+    %p
+      = t(".introduction_html")
+  .row
+    %button.btn-main.btn-auto-width.open-survey-button
+      = t(".become_partner_button")
+
+.main-registration
+  .container.selling-points
+    .row.with-double-margin
+      .span8
+        %h2= t(".container.selling_points.main_headline")
+
+    .row.with-margin
+      .span1.mobile-span3= svg_image_tag "registrations/smartphone.svg"
+      .span8.mobile-span9
+        %h3= t(".container.selling_points.easy_reliable_booking_headline")
+        %p= t(".container.selling_points.easy_reliable_booking_content")
+
+    .row.with-margin
+      .span1.mobile-span3= svg_image_tag "registrations/clock.svg"
+      .span8.mobile-span9
+        %h3= t(".container.selling_points.no_taxi_line_headline")
+        %p= t(".container.selling_points.no_taxi_line_content")
+
+    .row.with-margin
+      .span1.mobile-span3= svg_image_tag "registrations/dollarsign.svg"
+      .span8.mobile-span9
+        %h3= t(".container.selling_points.fixed_prices_headline")
+        %p= t(".container.selling_points.fixed_prices_content")
+
+  .container.how-it-works
+    .row
+      .span6= image_tag "shared/iphone-bg.jpg"
+      %h2= t(".container.how_it_works.main_headline")
+
+    .row.with-margin
+      .span6
+        %h3= t(".container.how_it_works.accepting_a_ride_headline")
+        %p= t(".container.how_it_works.accepting_a_ride_content")
+
+    .row.with-margin
+      .span6
+        %h3= t(".container.how_it_works.regular_payment_headline")
+        %p= t(".container.how_it_works.regular_payment_content")
+
+    .row.with-margin
+      .span6
+        %h3= t(".container.how_it_works.complete_control_headline")
+        %p= t(".container.how_it_works.complete_control_content")
+
+    .row.with-margin
+      .span6
+        %h3= t(".container.how_it_works.using_blacklane_headline")
+        %p= t(".container.how_it_works.using_blacklane_content")
+
+  .container.conclusion
+    .row.with-margin
+      %h2= t(".container.conclusion.headline")
+
+    .row.with-margin
+      .span12
+        %p= t(".container.conclusion.marketing_content_bottom_left")
+
+.hide#surveygizmo-overlay
+  .iframe-content
+    %button.survey-close.close-survey-button
+    %iframe{frameborder: "0",
+      height: "900",
+      src: "//www.surveygizmo.com/s3/2193495/Partner-Quiz",
+      style: "overflow:hidden",
+      width: "100%"}
+
+  %a.black-overlay.close-survey-button
+
